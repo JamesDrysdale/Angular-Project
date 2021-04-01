@@ -20,7 +20,7 @@ export class ClientsComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.listData = data.default;
+    this.listData = data;
     console.log(this.listData)
   }
 
