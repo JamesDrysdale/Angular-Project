@@ -1,3 +1,50 @@
-<p>home works!</p>
 
 <router-outlet></router-outlet>
+
+<nz-layout>
+
+    <nz-header>
+        <div class="logo"></div>
+        <ul nz-menu nzTheme="dark" nzMode="horizontal" class="header-menu">
+            <li nz-menu-item class="header-link">
+                <a routerLink="/home" routerLinkActive="active">Home</a>    
+            </li>
+            <li nz-menu-item class="header-link">
+                <a routerLink="/home/clients" routerLinkActive="active">Clients</a>
+            </li>
+            <li nz-menu-item class="header-link">
+                <a routerLink="/home/contractors" routerLinkActive="active">Contractors</a>
+            </li>
+        </ul>
+
+    </nz-header>
+    
+    <nz-content class="outer-content">
+        <nz-layout class="inner-layout">
+
+            <nz-sider nzWidth="200px" nzTheme="light">
+                <ul nz-menu nzTheme="light" nzMode="vertical">
+                    <li nz-menu-item>
+                        <a routerLink="/home" routerLinkActive="active">Home</a>
+                    </li>
+                    <li nz-menu-item>
+                        <a routerLink="/home/clients" routerLinkActive="active">
+                            Clients
+                        </a>
+                    </li>
+                    <li nz-menu-item>
+                        <a routerLink="/home/contractors" routerLinkActive="active">
+                            Contractors
+                        </a>
+                    </li>       
+                </ul>
+            </nz-sider>
+
+            <nz-content class="inner-content">Content</nz-content>
+
+        </nz-layout>
+    
+        <nz-footer>James Drysdale </nz-footer>
+    </nz-content>
+    
+</nz-layout>
